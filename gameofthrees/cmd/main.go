@@ -15,7 +15,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	for _, n := range gameofthrees.Count(num) {
+	for _, n := range gameofthrees.DivideBy3(num) {
 		fmt.Println(n)
 	}
 }

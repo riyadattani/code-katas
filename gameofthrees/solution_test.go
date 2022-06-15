@@ -30,7 +30,7 @@ func TestCount(t *testing.T) {
 
 	for _, tc := range tcs {
 		t.Run(fmt.Sprintf("Given the number %v, repeatedly divide the number by 3 till you reach 1", tc.given), func(t *testing.T) {
-			gotNums := gameofthrees.Count(tc.given)
+			gotNums := gameofthrees.DivideBy3(tc.given)
 			assert.Equal(t, tc.want, gotNums)
 		})
 	}
