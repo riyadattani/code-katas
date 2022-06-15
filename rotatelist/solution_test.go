@@ -21,6 +21,7 @@ func TestRotate(t *testing.T) {
 		{givenRotateNumber: 2, givenList: []int{1, 2, 3, 4, 5, 6}, want: []int{3, 4, 5, 6, 1, 2}},
 		{givenRotateNumber: 7, givenList: []int{1, 2, 3, 4, 5, 6}, want: []int{}},
 		{givenRotateNumber: -7, givenList: []int{1, 2, 3, 4, 5, 6}, want: []int{}},
+		{givenRotateNumber: 0, givenList: []int{1}, want: []int{1}},
 	}
 
 	for _, tc := range tcs {
