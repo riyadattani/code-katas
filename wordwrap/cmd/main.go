@@ -12,7 +12,7 @@ func main() {
 	input := os.Args[1]
 
 	if len(os.Args) != 2 {
-		log.Fatalf("please add some text to wrap, thaaaas")
+		log.Fatalf("please add some text to wrap, thaaaanks")
 	}
 
 	fmt.Printf("%s", wordwrap.Wrap(input, 59))
